@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
     <title>게시글 수정</title>
@@ -58,11 +59,6 @@
         background-color: #6c757d;
         color: white;
       }
-
-      .btn-danger {
-        background-color: #dc3545;
-        color: white;
-      }
     </style>
 </head>
 <body>
@@ -77,7 +73,7 @@
 
         <div class="form-group">
             <label for="content">내용</label>
-            <textarea id="content" name="content" required>${post.content}</textarea>
+            <textarea id="content" name="content" required>${fn:escapeXml(post.content)}</textarea>
         </div>
 
         <div class="form-group">
