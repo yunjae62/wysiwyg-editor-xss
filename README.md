@@ -3,7 +3,7 @@
 - Java 25
 - Spring boot 3.5.6
 - JSP
-- JSP
+- JPA
 - H2 DB
 - Summernote
 
