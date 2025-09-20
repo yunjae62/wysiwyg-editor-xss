@@ -52,10 +52,10 @@
         <tr>
             <td>${post.id}</td>
             <td>
-                <a href="/post/${post.id}" class="btn btn-view">${post.title}</a>
+                <a href="/posts/${post.id}" class="btn btn-view">${post.title}</a>
             </td>
             <td>
-                <a href="/post/${post.id}/edit" class="btn btn-edit">수정</a>
+                <a href="/posts/${post.id}/edit" class="btn btn-edit">수정</a>
             </td>
         </tr>
     </c:forEach>
