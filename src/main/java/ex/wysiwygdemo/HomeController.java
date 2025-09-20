@@ -40,4 +40,19 @@ public class HomeController {
         postRepository.save(post);
         return "redirect:/";
     }
+
+    @GetMapping("/posts/{id}/edit")
+    public String editPost(@PathVariable Long id, Model model) {
+        Post post = postRepository.findById(id).orElseThrow();
+        model.addAttribute("post", post);
+        return "editPost";
+    }
+
+    @PostMapping("/posts/{id}/edit")
+    public String editPost(@PathVariable Long id, Post post) {
+        Post existingPost = postRepository.findById(id).orElseThrow();
+        existingPost.update(post.getTitle(), post.getContent());
+        postRepository.save(existingPost);
+        return "redirect:/posts/" + id;
+    }
 }
