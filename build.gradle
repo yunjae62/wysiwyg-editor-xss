@@ -36,8 +36,8 @@ dependencies {
     implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
     implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
 
-    // mybatis
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.5'
+    // jpa
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     // h2 database
     runtimeOnly 'com.h2database:h2'
