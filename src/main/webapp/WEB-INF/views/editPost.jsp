@@ -3,6 +3,14 @@
 <html>
 <head>
     <title>게시글 수정</title>
+    <!-- jQuery 먼저 로드 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Summernote 관련 파일들 -->
+    <link rel="stylesheet" href="<c:url value="/css/summernote/summernote-lite.css"/>">
+    <script src="<c:url value="/js/summernote/summernote-lite.js"/>"></script>
+    <script src="<c:url value="/js/summernote/lang/summernote-ko-KR.js"/>"></script>
+    <!-- Summernote 적용 JS -->
+    <script src="<c:url value="/js/post.js"/>"></script>
     <style>
       .form-container {
         max-width: 800px;
