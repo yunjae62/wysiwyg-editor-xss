@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: wysiwyg-demo
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
