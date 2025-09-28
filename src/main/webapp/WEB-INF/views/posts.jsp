@@ -73,7 +73,7 @@
 <body>
 <div class="post-container">
     <div class="post-header">
-        <div class="post-title">${post.title}</div>
+        <div class="post-title"><c:out value="${post.title}"/></div>
         <div class="post-info">게시글 번호: ${post.id}</div>
     </div>
 
